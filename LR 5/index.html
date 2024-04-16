@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="LERO" content="width=device-width, initial-scale=1.0">
+  <title>LERO - Ресторан</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Додаткові стилі тут */
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+    .navbar {
+      background-color: #5c62b5;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+      color: #fff;
+    }
+    .navbar-dark .navbar-nav .nav-link:hover {
+      text-decoration: underline;
+    }
+    .jumbotron {
+      background-image: url(images/photo1.jpg);
+      background-color: #484b82;
+      background-size: cover;
+      color: #ffffff;
+      text-align: center;
+      padding: 100px 0;
+    }
+    .about-section {
+      padding: 50px 0;
+    }
+    .about-section h2 {
+      margin-bottom: 20px;
+    }
+    .about-section p {
+      font-size: 18px;
+    }
+    .footer {
+      background-color: #000000;
+      color: #ffffff;
+    }
+    /* Плавний перехід */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">LERO</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Головна</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="menu.html">Меню</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="details.html">Про нас</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#footer">Контакти</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Jumbotron -->
+  <div class="jumbotron">
+    <h1 class="display-4">Ласкаво просимо до LERO</h1>
+    <p class="lead">Найкращий ресторан зі смачною їжею</p>
+    <a class="btn btn-dark btn-lg" href="#" role="button">Забронювати столик</a>
+
+  </div>
+
+  <!-- Заповнення зображеннями та текстом -->
+  <div class="container">
+    <div class="row about-section">
+      <div class="col-md-6">
+        <img src="images/photo2.jpg" alt="Меню" class="img-fluid"> <!-- Фото обране з unsplash.com -->
+      </div>
+      <div class="col-md-6">
+        <h2>Наше Меню</h2>
+        <p>У нашому ресторані ви знайдете широкий вибір страв для кожного смаку.</p>
+        <p>Ми пишаємося швидкістю приготування їжі та хорошими відгуками відвідувачів.</p>
+        <p><a class="btn btn-secondary" href="menu.html" role="button">Переглянути меню</a></p>
+      </div>
+    </div>
+    <hr>
+    <div class="row about-section">
+      <div class="col-md-6">
+        <h2>Про нас</h2>
+        <p>У ресторані "LERO" ми прагнемо створити незабутній досвід для наших гостей.</p>
+        <p>Наша команда зробить все можливе, щоб кожен відвідувач почувався особливо.</p>
+        <p><a class="btn btn-secondary" href="details.html" role="button">Детальніше</a></p>
+      </div>
+      <div class="col-md-6">
+        <img src="images/photo3.jpg" alt="Про нас" class="img-fluid"> <!-- Фото обране з unsplash.com -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Підвал -->
+  <footer id="footer" class="footer text-white text-center py-3">
+    &copy; 2024 LERO - Ресторан <br>
+    Номер телефону: +380 (50) 123-45-67 <br>
+    Інстаграм: @lero_restaurant
+  </footer>
+
+  <!-- Підключення Bootstrap та скриптів -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
